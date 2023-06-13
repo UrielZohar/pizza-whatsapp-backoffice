@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+
+  & button, h1, h2, h3, h4, ul, li, div {
+    direction: rtl;
+  }
+
+  & .productsList {
+    display: grid;
+    grid-template-columns: 80px 200px 70px;
+    gap: 10px;
+    background-color: #b4babe91;
+    padding: 10px;
+    width: 500px;
+    margin-right: auto;
+
+    & input.price {
+      width: 70px;
+    }
+  }
+}
