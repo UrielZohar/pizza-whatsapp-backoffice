@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Pizza WhatsApp Backoffice - Login With Gmail</title>
+      <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="./style/home.css">
+
+      <!-- update the version number as needed -->
+      <script defer src="/__/firebase/9.22.2/firebase-app-compat.js"></script>
+      <!-- include only the Firebase features as you need -->
+      <script defer src="/__/firebase/9.22.2/firebase-auth-compat.js"></script>
+      <script defer src="/__/firebase/9.22.2/firebase-database-compat.js"></script>
+      <script defer src="/__/firebase/9.22.2/firebase-firestore-compat.js"></script>
+      <!-- 
+        initialize the SDK after all desired features are loaded, set useEmulator to false
+        to avoid connecting the SDK to running emulators.
+      -->
+      <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+      <section class="socialMedia-container shown-container"> 
+        <button id="signInWithGoogle">Login with your Google
+          <img src="./img/google.svg" width="55px" height="55px" alt="Sign in with your Google account.">
+        </button>
+      </section>
+      </div>
+      <nav>
+
+      <div class="feedbackContainer success">
+        <div class="feedbackIcon"></div>
+        <p class="feedbackMessage">Signed up Successfully</p>
+      </div>
+      <div class="feedbackContainer failure">
+        <div class="feedbackIcon"></div>
+        <p class="feedbackMessage">Signing up failed</p>
+      </div>
+    </main>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+    <!-- Initialize Firebase -->
+    <script defer src="./js/home.js"></script>
+  </body>
+</html>
