@@ -7,7 +7,7 @@
     direction: rtl;
   }
 
-  & .productsList {
+  & .productsList, .toppingsList {
     display: grid;
     grid-template-columns: 80px 200px 70px;
     gap: 10px;
